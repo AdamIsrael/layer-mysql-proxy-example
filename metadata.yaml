@@ -1,0 +1,18 @@
+name: mysql-proxy-example
+summary: An example of using relations with a proxy charm
+maintainer: Adam Israel <Adam.Israel@ronin>
+description: |
+  This provides an example of how to use relations when it is being consumed
+  by a VNF.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - mysql
+subordinate: false
+series:
+  - trusty
+  - xenial
+  - bionic
+requires:
+  db:
+    interface: mysql
